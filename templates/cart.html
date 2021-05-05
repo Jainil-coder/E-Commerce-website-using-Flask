@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='cart3.png') }}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Your personal Cart</h1>
+            <span class="subheading">Your added items will appear here</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+   <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 col-md-10 mx-auto">
+        <h2 class="section-heading">Your selected products : </h2>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+      <div class="row">
+         <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Sr no.</th>
+      <th scope="col">Name</th>
+      <th scope="col">Colour</th>
+      <th scope="col">Company</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Price</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <th scope="row">1</th>
+      <td>Puma King Collection</td>
+      <td>Black and Gold</td>
+      <td>Puma</td>
+      <td><input id="number" value="1"></td>
+      <td>₹ 16,999</td>
+      <td><a href=""><input type="button" value="Delete"></a></td>
+    </tr>
+
+  </tbody>
+</table>
+        </div>
+      </div>
+        <br>
+        <div id="success"></div>
+        <div class="row">
+        <div class="col-lg-9 col-md-10 mx-auto">
+        <a class="btn btn-primary float-center" href="http://127.0.0.1:5000/products">Add Products</a>
+        </div>
+        </div>
+        </form>
+
+ <!-- Pager -->
+        <div class="clearfix">
+        <br>
+        <br>
+          <div class="col-lg-9 col-md-10 mx-auto" >
+          <h4>Login to Clear your payment and make the products yours</h4>
+          <br>
+          <a class="btn btn-primary float-center" href="http://127.0.0.1:5000/login">Login &rarr;</a>
+        </div>
+        </div>
+
+{% endblock %}

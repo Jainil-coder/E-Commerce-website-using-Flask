@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='about.png') }}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Us</h1>
+            <span class="subheading">This is what we do.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h1>Our Vision: </h1>
+        <h3>Making INDIA shop online.</h3>
+        <p>Digitisation is increasingly influencing all industrial sectors and is changing entire business models.</p>
+        <p>We pave the way into the digital future of marketing, sales and services for medium-sized enterprises and internationally operating companies. We combine creativity, experience, and technology in intelligent digital solutions.</p>
+        <p>We integrate strategy, conception, development and implementation, as well as marketing in a holistic project process in order to effectively present our clients’ brands. This way, we make digital success possible right from the start.</p>
+        <br></br>
+        <br></br>
+        <h1>Our Mission: </h1>
+        <h3>Digital Success right from the Start </h3>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}

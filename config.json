@@ -1,0 +1,17 @@
+{
+    "params":
+    {
+        "local_server" : "True",
+        "local_uri" : "mysql://root:@localhost/pythonminiproject",
+        "prod_uri" : "mysql://root:@localhost/pythonminiproject",
+        "fb_url" : "https://www.facebook.com/jainil.shah.3139",
+        "in_url" : "https://www.linkedin.com/in/jainil-shah-a802321b0/",
+        "ig_url" : "https://www.instagram.com/jainil_2401_/",
+        "shop_name" : "Shop Now"
+
+
+    }
+
+
+
+}

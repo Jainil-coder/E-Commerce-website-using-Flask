@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+{% block body %}
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='home.png') }}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Shop Now</h1>
+            <span class="subheading">Fast. Easy. Secure. Reliable.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+      <!-- Todo fetch it using for loop from database -->
+        <div class="post-preview">
+            <h1 class="post-title">
+              Associated Brands
+            </h1>
+            <br>
+          <a href="https://www.apple.com/in/", target=_"blank"><h3>Apple</h3></a>
+        </div>
+        <hr>
+        <br>
+        <div class="post-preview">
+            <h2 class="post-title">
+             <a href="https://in.puma.com/", target=_"blank"><h3>Puma</h3></a>
+            </h2>
+        </div>
+        <hr>
+        <br>
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+             <a href="https://www.bata.in/", target=_"blank"><h3>Bata</h3></a>
+            </h2>
+          </a>
+        </div>
+        <hr>
+        <br>
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              <a href="https://www.samsung.com/in/", target=_"blank"><h3>Samsung</h3></a>
+            </h2>
+          </a>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              <a href="https://www.samsung.com/in/", target=_"blank"><h3></h3></a>
+            </h2>
+          </a>
+        </div>
+        <br>
+        <div class="post-preview">
+            <h2 class="post-title">
+              <h3>And Many more...</h3>
+            </h2>
+        </div>
+        <hr>
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="http://127.0.0.1:5000/products">Products &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
